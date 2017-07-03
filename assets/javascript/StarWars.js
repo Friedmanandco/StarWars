@@ -451,7 +451,7 @@
           {
             id: "resetButton",
             alt: "RESET",
-            src: "assets/images/reset.jpeg",
+            src: "assets/images/reset1.jpg",
             width: "75",
             height: "75"
           }).appendTo("#reset-col");
