@@ -139,12 +139,12 @@
             $("<div>").attr(
             {
 
-              class: "col-md-1",
+              class: "col-md-12",
               id: "charwrapper"
             }).appendTo("#choose");
             $("<div>").attr(
             {
-              // class: "col-md-1",
+              class: "col-md-1",
               id: "Vader-col"
             }).appendTo("#charwrapper");
             DarthVader.graphic.appendTo("#Vader-col");
@@ -166,12 +166,12 @@
             $("<div>").attr(
             {
 
-              class: "col-md-1",
+              class: "col-md-12",
               id: "charwrapper"
             }).appendTo("#choose");
             $("<div>").attr(
             {
-              
+              class: "col-md-1",
               id: "Maul-col"
             }).appendTo("#charwrapper");
             DarthMaul.graphic.appendTo("#Maul-col");
@@ -193,12 +193,12 @@
             $("<div>").attr(
             {
 
-              class: "col-md-1",
+              class: "col-md-12",
               id: "charwrapper"
             }).appendTo("#choose");
             $("<div>").attr(
             {
-              // class: "col-md-3",
+              class: "col-md-2",
               id: "Luke-col"
             }).appendTo("#charwrapper");
             LukeSkywalker.graphic.appendTo("#Luke-col");
@@ -220,12 +220,12 @@
             $("<div>").attr(
             {
 
-              class: "col-md-1",
+              class: "col-md-12",
               id: "charwrapper"
             }).appendTo("#choose");
             $("<div>").attr(
             {
-              // class: "col-md-4",
+              class: "col-md-1",
               id: "R2D-col"
             }).appendTo("#charwrapper");
             R2D2.graphic.appendTo("#R2D-col");
@@ -247,12 +247,12 @@
             $("<div>").attr(
             {
 
-              class: "col-md-1",
+              class: "col-md-8",
               id: "charwrapper"
             }).appendTo("#choose");
             $("<div>").attr(
             {
-              // class: "col-md-5",
+              class: "col-md-2",
               id: "Obi-col"
             }).appendTo("#charwrapper");
             ObiWan.graphic.appendTo("#Obi-col");
@@ -274,12 +274,12 @@
             $("<div>").attr(
             {
 
-              class: "col-md-1",
+              class: "col-md-12",
               id: "charwrapper"
             }).appendTo("#choose");
             $("<div>").attr(
             {
-              // class: "col-md-6",
+              class: "col-md-1",
               id: "Yo-col"
             }).appendTo("#charwrapper");
            Yoda.graphic.appendTo("#Yo-col");
@@ -301,12 +301,12 @@
             $("<div>").attr(
             {
 
-              class: "col-md-1",
+              class: "col-md-12",
               id: "charwrapper"
             }).appendTo("#choose");
             $("<div>").attr(
             {
-              // class: "col-md-7",
+              class: "col-md-2",
               id: "Chewy-col"
             }).appendTo("#charwrapper");
             Chewbacca.graphic.appendTo("#Chewy-col");
@@ -328,12 +328,12 @@
             $("<div>").attr(
             {
 
-              class: "col-md-1",
+              class: "col-md-12",
               id: "charwrapper"
             }).appendTo("#choose");
             $("<div>").attr(
             {
-              // class: "col-md-8",
+              class: "col-md-1",
               id: "C3P-col"
             }).appendTo("#charwrapper");
             C3PO.graphic.appendTo("#C3P-col");
