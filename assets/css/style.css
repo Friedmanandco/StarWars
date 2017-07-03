@@ -4,15 +4,106 @@
 
 
 body {
-    background-image: url("../images/starbackround.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url("../images/star.jpg");
+    width: 100%;
+    background-size: 100%;
    
+	
 }
 
-#img
-{
- background-color: red;
+h1, h2, h3 {
+	font-family:  'Georgia', Times, Times New Roman, serif;
+	font-weight: 700;
+	color: red;
+}
+ 
+p {
+	color: gold;
 
+
+}
+
+
+
+#C3P_image
+{
+
+max-width: 650px;
+  padding: 5px;
+ overflow: auto;
+  background: transparent;
+  border: 1px solid #ddd;
+	
+
+}
+
+#Vader_image
+ {
+
+max-width: 650px;
+  padding: 5px;
+  overflow: auto;
+  background: transparent;
+  border: 1px solid #ddd;
+	
+
+}
+#Maul_image
+{
+
+max-width: 650px;
+  padding: 5px;
+overflow: auto;
+  background: transparent;
+  border: 1px solid #ddd;
+	
+}
+#Luke_image
+{
+max-width: 650px;
+  padding: 5px;
+ overflow: auto;
+  background: transparent;
+  border: 1px solid #ddd;
+	
+
+}
+#RD2_image
+{
+
+max-width: 650px;
+  padding: 5px;
+ overflow: auto;
+  background: transparent;
+  border: 1px solid #ddd;
+	
+}
+#Obi_image
+{
+
+max-width: 650px;
+  padding: 5px;
+ overflow: auto;
+  background: transparent;
+  border: 1px solid #ddd;
+	
+}
+#Yo_image
+{
+max-width: 650px;
+  padding: 5px;
+  background: transparent;
+  border: 1px solid #ddd;
+  overflow: auto;
+	
+}
+#Chewy_image
+{
+max-width: 650px;
+  padding: 5px;
+  overflow: auto;
+  background: transparent;
+  border: 1px solid #ddd;
+	
 
 }

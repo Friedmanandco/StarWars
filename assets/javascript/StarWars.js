@@ -279,7 +279,7 @@
             }).appendTo("#choose");
             $("<div>").attr(
             {
-              class: "col-md-1",
+              class: "col-md-2",
               id: "Yo-col"
             }).appendTo("#charwrapper");
            Yoda.graphic.appendTo("#Yo-col");
@@ -400,9 +400,120 @@
     
     }
 
+      function play(player, enemy)
+{
+  if ($("#fightSect").find("#ft-btnRow").length == 0)
+  {
+    $("<div>").attr(
+    {
+      class: "row",
+      id: "ft-btnRow"
+    }).appendTo("#fightSect");
+      $("<div>").attr(
+      {
+        class: "col-md-12",
+        id: "fight-col",
+      }).appendTo("#ft-btnRow");
+        $("<img>").attr(
+        {
+          id: "lightsaber",
+          alt: "Fight!",
+          src: "assets/images/attack-button.jpg",
+          width: "75",
+          height: "75"
+        }).appendTo("#fight-col");
+
+          $("<div>").attr(
+          {
+            class: "row",
+            id: "textRow"
+          }).appendTo("#fightSect");
+            $("<p>").attr(
+            {
+              id: "youdamage"
+            }).appendTo("#textRow");
+              $("<p>").attr(
+              {
+                id: "foedamage"
+              }).appendTo("#textRow");
+
+      $("<div>").attr(
+      {
+        class: "row",
+        id: "resetrow"
+      }).appendTo("#fightSect");
+        $("<div>").attr(
+        {
+          class: "col-md-12",
+          id: "reset-col"
+        }).appendTo("#resetrow");
+          $("<img>").attr(
+          {
+            id: "resetButton",
+            alt: "RESET",
+            src: "assets/images/reset.jpeg",
+            width: "75",
+            height: "75"
+          }).appendTo("#reset-col");
+  }
+  $("#lightsaber").click(function()
+  {
+    if (enemy.hp > 0 && player.hp > 0)
+    {
+      enemy.hp -= player.atk;
+      $(enemy.hpDisplay).text(enemy.hp);
+      $("#youdamage").text(player.name + " attacks " + enemy.name + " for " + player.atk + " damage.");
+      player.atk += player.initAtk;
+      if (enemy.hp > 0)
+      {
+        $("#foedamage").text(enemy.name + " counters " + player.name + ", dealing " + enemy.ctr + " damage.");
+        player.hp -= enemy.ctr;
+        $(player.hpDisplay).text(player.hp);
+        if (player.hp <= 0)
+        {
+          $("#char-col").html("");
+          $("#youdamage").html("");
+          $("#foedamage").html("You are defeated. Click the Reset button to play again");
+        }
+      }
+      else if (enemy.hp <= 0)
+      {
+        $("#defender").html("");
+        $("#foedamage").html("");
+        $("#youdamage").html(enemy.name + " defeated!");
+        if ($("#remainingVictims").find(".col-md-3").length == 0)
+        {
+          alert("You win!");
+          location.reload(true);
+        }
+      }
+    }
+    else if (enemy.hp <= 0)
+    {
+      $("#youdamage").html("There is no enemy here.");
+    }
+    else if (player.hp <= 0)
+    {
+      $("#foedamage").html("You are still dead. Press the Reset button to play again.");
+    }
+  });
+
+$("#resetButton").click(function()
+{
+  if ($("#char-col").find(".col-md-3").length > 0)
+  {
+    var r = confirm("Are you sure?");
+    if (r == true)
+      location.reload(true);
+    else
+      return;
+  }
+  else
+    location.reload(true);
+})
 
 
-          });
+      }  });
          });
           });
 
